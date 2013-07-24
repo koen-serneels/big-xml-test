@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BigXmlTest xmlns="http://www.error.be/bigxmltest">
+	<Header>
+		<SomeHeaderElement>Something something darkside</SomeHeaderElement>
+	</Header>
+	<Content>
+		<Data>Data1</Data>
+		<Data>Data2</Data>
+		<Data>Data3</Data>
+		<Data>Data4</Data>
+		<Data>Data5</Data>
+		<Data>Data6</Data>
+	</Content>
+</BigXmlTest>

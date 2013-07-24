@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.error.be/bigxmltest"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:bigxmltest="http://www.error.be/bigxmltest" elementFormDefault="qualified">	<xs:element name="BigXmlTest" type="bigxmltest:BigXmlTestType"></xs:element>
+
+	<xs:complexType name="BigXmlTestType">
+		<xs:sequence>
+			<xs:element name="Header" type="bigxmltest:HeaderType"></xs:element>
+			<xs:element name="Content" type="bigxmltest:ContentType"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="HeaderType">
+		<xs:sequence>
+			<xs:element name="SomeHeaderElement" type="xs:string"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+
+	<xs:complexType name="ContentType">
+		<xs:sequence>
+			<xs:element name="Data" type="xs:string" maxOccurs="unbounded"
+				minOccurs="0"></xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
